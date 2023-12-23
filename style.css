@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*:focus,
+*:focus-visible {
+	outline: none;
+}
+
+*::selection {
+	background-color: transparent;
+}
+
+html {
+	/* changes the 1REM from 16px to 10px */
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	height: 100vh;
+	background-color: #023047;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.container {
+	background-color: #ffb703;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+	box-shadow: 0 0 8px #fff;
+}
+
+h1 {
+	font-size: 2.6rem;
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.password-container {
+	background-color: #cc9202;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 2rem;
+
+	position: relative;
+}
+
+.password-container span {
+	display: inline-block;
+	font-size: 2.8rem;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+}
+
+.password-container i {
+	cursor: pointer;
+	padding: 1rem 1.4rem;
+	font-size: 2.4rem;
+	color: #fff;
+	background-color: #023047;
+	border-radius: 3px;
+	margin: 0.5rem 0.8rem;
+	transition: all 0.3s ease;
+}
+
+.password-container i:hover {
+	filter: brightness(120%);
+}
+
+.copied {
+	display: none;
+	position: absolute;
+	top: -24px;
+	right: -30px;
+}
+
+.copied.active {
+	display: block;
+	padding: 2px 5px;
+	background-color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+input {
+	border: none;
+	margin-left: 12rem;
+}
+
+.credentail {
+	font-size: 2.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.credentail:first-child input {
+	width: 5rem;
+	height: 2.4rem;
+	border: 1px solid #000;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.credentail:not(:first-child) input {
+	width: 2.4rem;
+	height: 2.4rem;
+	cursor: pointer;
+}
+
+.credentail:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	display: inline-block;
+	width: 100%;
+	border-radius: 6px;
+	font-size: 2.4rem;
+	padding: 1rem 0;
+	margin-top: 2rem;
+	background-color: #023047;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: all 0.5s ease;
+}
+
+button:hover {
+	filter: brightness(160%);
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+@media (max-width: 32em) {
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	input {
+		margin-left: 2rem;
+	}
+
+	.credentail {
+		font-size: 1.4rem;
+	}
+
+	button {
+		font-size: 1.4rem;
+	}
+}

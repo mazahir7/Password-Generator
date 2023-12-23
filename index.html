@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <h1>Password Generator</h1>
+
+    <div class="password-container">
+      <span class="password">&nbsp;</span>
+      <i class="fa-regular fa-clipboard copy"></i>
+
+      <div class="copied">Copied to clipboard</div>
+    </div>
+
+    <div class="credentails-container">
+
+      <div class="credentail password-length">
+        <p>Password Length</p>
+        <!-- <input type="text" name="" id="pass-length"> -->
+        <input type="number" min="5" max="20" name="" id="pass-length">
+      </div>
+
+      <div class="credentail">
+        <p>Include uppercase letters</p>
+        <input type="checkbox" id="pass-upper" checked>
+      </div>
+
+      <div class="credentail">
+        <p>Include lowercase letters</p>
+        <input type="checkbox" id="pass-lower" checked>
+      </div>
+
+      <div class="credentail">
+        <p>Include numbers</p>
+        <input type="checkbox" id="pass-number" checked>
+      </div>
+
+      <div class="credentail">
+        <p>Include symbols</p>
+        <input type="checkbox" id="pass-symbols" checked>
+      </div>
+
+    </div>
+
+
+    <button id="password-generator">Generate Password</button>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
